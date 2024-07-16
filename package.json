@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "clean": "rm -rf src && rm -rf lib",
-    "svgr": "svgr assets",
+    "svgr": "svgr -d src assets",
     "build": "npm run clean && npm run svgr && rollup -c --bundleConfigAsCjs"
   },
   "repository": {
