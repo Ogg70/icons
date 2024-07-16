@@ -1,0 +1,37 @@
+{
+  "name": "@Ogg70/icons-library",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "description": "",
+  "main": "lib/bundle/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf src && rm -rf lib",
+    "svgr": "svgr assets",
+    "build": "npm run clean && npm run svgr && rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@svgr/rollup": "^8.1.0",
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "rollup": "^4.18.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-multi-input": "^1.4.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
