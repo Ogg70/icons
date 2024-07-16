@@ -13,6 +13,10 @@
     "svgr": "svgr assets",
     "build": "npm run clean && npm run svgr && rollup -c --bundleConfigAsCjs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogg70/icons.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
